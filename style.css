@@ -190,7 +190,7 @@ h1 {
   text-wrap: balance;
 }
 
-/* ---------- Introduction in six languages ---------- */
+/* ---------- Introduction in seven languages ---------- */
 
 .langs {
   max-width: 44rem;
@@ -232,7 +232,8 @@ h1 {
 }
 
 #lang-ar:checked ~ #intro-ar,
-#lang-zh:checked ~ #intro-zh,
+#lang-zh-hans:checked ~ #intro-zh-hans,
+#lang-zh-hant:checked ~ #intro-zh-hant,
 #lang-en:checked ~ #intro-en,
 #lang-fr:checked ~ #intro-fr,
 #lang-ru:checked ~ #intro-ru,
@@ -270,7 +271,8 @@ h1 {
 }
 
 #lang-ar:checked ~ .lang-tabs [for="lang-ar"],
-#lang-zh:checked ~ .lang-tabs [for="lang-zh"],
+#lang-zh-hans:checked ~ .lang-tabs [for="lang-zh-hans"],
+#lang-zh-hant:checked ~ .lang-tabs [for="lang-zh-hant"],
 #lang-en:checked ~ .lang-tabs [for="lang-en"],
 #lang-fr:checked ~ .lang-tabs [for="lang-fr"],
 #lang-ru:checked ~ .lang-tabs [for="lang-ru"],
@@ -281,7 +283,8 @@ h1 {
 }
 
 #lang-ar:focus-visible ~ .lang-tabs [for="lang-ar"],
-#lang-zh:focus-visible ~ .lang-tabs [for="lang-zh"],
+#lang-zh-hans:focus-visible ~ .lang-tabs [for="lang-zh-hans"],
+#lang-zh-hant:focus-visible ~ .lang-tabs [for="lang-zh-hant"],
 #lang-en:focus-visible ~ .lang-tabs [for="lang-en"],
 #lang-fr:focus-visible ~ .lang-tabs [for="lang-fr"],
 #lang-ru:focus-visible ~ .lang-tabs [for="lang-ru"],
@@ -303,15 +306,26 @@ h1 {
   line-height: 1.35;
 }
 
-.langs .who-list li {
-  color: var(--ink);
-}
-
 .intro-time {
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
   margin: 0.875rem 0 0;
+}
+
+/* The arrow sits inside the sentence and follows its size */
+.intro-action {
+  margin: 0.875rem 0 0;
+  font-weight: 700;
+}
+
+.action-icon {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-inline-end: 0.3em;
+  vertical-align: -0.08em;
+  color: var(--harbour);
 }
 
 .time-icon {
@@ -362,80 +376,7 @@ h1 {
   vertical-align: -0.25em;
 }
 
-/* ---------- About this study (collapsed) ---------- */
-
-.about {
-  margin-top: 0.75rem;
-}
-
-.about > summary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  min-height: 2.75rem;
-  color: var(--harbour);
-  font-weight: 700;
-  cursor: pointer;
-  list-style: none;
-}
-
-.about > summary::-webkit-details-marker {
-  display: none;
-}
-
-.about > summary::before {
-  content: "";
-  width: 0.5rem;
-  height: 0.5rem;
-  margin-inline: 0.125rem 0.125rem;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(-45deg);
-  transition: transform 0.15s ease;
-}
-
-.about[open] > summary::before {
-  transform: rotate(45deg) translate(-2px, -2px);
-}
-
-.about > summary:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
-}
-
-.about-body {
-  max-width: 42rem;
-  margin: 0.25rem 0 0.5rem 0.4rem;
-  padding: 0.25rem 0 0.25rem 1.1rem;
-  border-left: 2px solid var(--line);
-}
-
-.about-heading {
-  margin: 1.125rem 0 0.25rem;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-.about-heading:first-child {
-  margin-top: 0.25rem;
-}
-
-.about-body p {
-  margin: 0;
-  color: var(--slate);
-  line-height: 1.65;
-}
-
-.about-body .about-note {
-  margin: 0.25rem 0 0.5rem;
-  padding: 0.625rem 0.875rem;
-  border-radius: 8px;
-  background: var(--harbour-tint);
-  color: var(--ink);
-  font-size: 0.9375rem;
-  line-height: 1.55;
-}
+/* ---------- Who can participate list ---------- */
 
 .who-list {
   margin: 0;
@@ -446,7 +387,6 @@ h1 {
 .who-list li {
   position: relative;
   padding-inline-start: 1.25rem;
-  color: var(--slate);
   line-height: 1.65;
 }
 
