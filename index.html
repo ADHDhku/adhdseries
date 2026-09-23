@@ -18,11 +18,12 @@
   <main class="page">
     <header class="intro">
       <h1>The long-term clinical, societal, economic, and political impact of Attention-Deficit/<wbr>Hyperactivity Disorder (ADHD)</h1>
-      <!-- Introduction in the six official WHO languages. The buttons are radio buttons + CSS,
-           so switching works without JavaScript; the script only starts on the browser language. -->
+      <!-- Introduction in seven languages. The buttons are radio buttons + CSS, so switching
+           works without JavaScript; the script only starts on the browser language. -->
       <div class="langs" id="intro">
         <input class="lang-radio" type="radio" name="intro-lang" id="lang-ar" value="ar">
-        <input class="lang-radio" type="radio" name="intro-lang" id="lang-zh" value="zh">
+        <input class="lang-radio" type="radio" name="intro-lang" id="lang-zh-hans" value="zh-hans">
+        <input class="lang-radio" type="radio" name="intro-lang" id="lang-zh-hant" value="zh-hant">
         <input class="lang-radio" type="radio" name="intro-lang" id="lang-en" value="en" checked>
         <input class="lang-radio" type="radio" name="intro-lang" id="lang-fr" value="fr">
         <input class="lang-radio" type="radio" name="intro-lang" id="lang-ru" value="ru">
@@ -30,7 +31,8 @@
         <div class="lang-tabs">
           <svg class="globe-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
           <label class="lang-tab" for="lang-ar" lang="ar" dir="rtl">العربية</label>
-          <label class="native lang-tab" for="lang-zh" lang="zh-Hans">简体中文</label>
+          <label class="native lang-tab" for="lang-zh-hans" lang="zh-Hans">简体中文</label>
+          <label class="native lang-tab" for="lang-zh-hant" lang="zh-Hant">繁體中文</label>
           <label class="lang-tab" for="lang-en" lang="en">English</label>
           <label class="lang-tab" for="lang-fr" lang="fr">Français</label>
           <label class="lang-tab" for="lang-ru" lang="ru">Русский</label>
@@ -44,9 +46,10 @@
             <li>أفراد الأسرة البالغون الذين يرعون أطفالاً مصابين بهذا الاضطراب</li>
           </ul>
           <p class="intro-time"><svg class="time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>يستغرق إكمال الاستبيان ما بين 20 و30 دقيقة تقريبًا.</span></p>
+          <p class="intro-action"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v13m0 0 5.5-5.5M12 18l-5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>اختر بلدك من القائمة أدناه للمشاركة.</span></p>
           <p class="contact"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>لديك أسئلة؟ راسلنا على <a href="mailto:adhdseries.lancetpsy@hku.hk" dir="ltr">adhdseries.lancetpsy@hku.hk</a></span></p>
         </div>
-        <div class="lang-panel native" id="intro-zh" lang="zh-Hans">
+        <div class="lang-panel native" id="intro-zh-hans" lang="zh-Hans">
           <p class="intro-text">ADHD（注意缺陷多动障碍）是一种常见的神经发育障碍，可能影响健康、教育、工作和家庭生活。本研究在30多个国家和地区开展，旨在了解ADHD对个人、家庭和社会造成的实际成本及更广泛的影响，以协助规划更完善的本地和全球医疗保健及相关服务。</p>
           <h2 class="intro-heading">谁可以参加？</h2>
           <ul class="who-list">
@@ -54,7 +57,19 @@
             <li>ADHD儿童的成年家庭照顾者</li>
           </ul>
           <p class="intro-time"><svg class="time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>完成问卷大约需要20–30分钟。</span></p>
+          <p class="intro-action"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v13m0 0 5.5-5.5M12 18l-5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>请在下方选择你所在的国家或地区参加。</span></p>
           <p class="contact"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>如有疑问，请发送电子邮件至 <a href="mailto:adhdseries.lancetpsy@hku.hk" dir="ltr">adhdseries.lancetpsy@hku.hk</a></span></p>
+        </div>
+        <div class="lang-panel native" id="intro-zh-hant" lang="zh-Hant">
+          <p class="intro-text">ADHD（專注力不足／過度活躍症）是常見的神經發展障礙，可能影響健康、教育、工作和家庭生活。本研究在30多個國家和地區進行，旨在了解ADHD對個人、家庭和社會造成的實際成本及更廣泛的影響，以協助規劃更完善的本地和全球醫療保健及相關服務。</p>
+          <h2 class="intro-heading">誰可以參加？</h2>
+          <ul class="who-list">
+            <li>患有ADHD的成年人</li>
+            <li>ADHD兒童的成年家庭照顧者</li>
+          </ul>
+          <p class="intro-time"><svg class="time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>完成問卷大約需要20–30分鐘。</span></p>
+          <p class="intro-action"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v13m0 0 5.5-5.5M12 18l-5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>請在下方選擇你所在的國家或地區參加。</span></p>
+          <p class="contact"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>如有查詢，請電郵至 <a href="mailto:adhdseries.lancetpsy@hku.hk" dir="ltr">adhdseries.lancetpsy@hku.hk</a></span></p>
         </div>
         <div class="lang-panel" id="intro-en" lang="en">
           <p class="intro-text">ADHD is a common neurodevelopmental condition that can affect health, education, work and family life. This study looks at the real-world costs and wider impact of ADHD on individuals, families and society in more than 30 countries and regions, to help plan better local and global healthcare and services.</p>
@@ -64,6 +79,7 @@
             <li>Adult family caregivers of children with ADHD</li>
           </ul>
           <p class="intro-time"><svg class="time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The survey takes about 20–30 minutes to complete.</span></p>
+          <p class="intro-action"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v13m0 0 5.5-5.5M12 18l-5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Choose your country below to take part.</span></p>
           <p class="contact"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Questions? Email us at <a href="mailto:adhdseries.lancetpsy@hku.hk" dir="ltr">adhdseries.lancetpsy@hku.hk</a></span></p>
         </div>
         <div class="lang-panel" id="intro-fr" lang="fr">
@@ -74,6 +90,7 @@
             <li>Les proches aidants adultes d’enfants ayant un TDAH</li>
           </ul>
           <p class="intro-time"><svg class="time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Il faut environ 20 à 30 minutes pour répondre au questionnaire.</span></p>
+          <p class="intro-action"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v13m0 0 5.5-5.5M12 18l-5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Choisissez votre pays ci-dessous pour participer.</span></p>
           <p class="contact"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Des questions ? Écrivez-nous à <a href="mailto:adhdseries.lancetpsy@hku.hk" dir="ltr">adhdseries.lancetpsy@hku.hk</a></span></p>
         </div>
         <div class="lang-panel native" id="intro-ru" lang="ru">
@@ -84,6 +101,7 @@
             <li>Взрослые члены семьи, ухаживающие за детьми с СДВГ</li>
           </ul>
           <p class="intro-time"><svg class="time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Заполнение опроса занимает примерно 20–30 минут.</span></p>
+          <p class="intro-action"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v13m0 0 5.5-5.5M12 18l-5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Выберите свою страну ниже, чтобы принять участие.</span></p>
           <p class="contact"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Есть вопросы? Напишите нам: <a href="mailto:adhdseries.lancetpsy@hku.hk" dir="ltr">adhdseries.lancetpsy@hku.hk</a></span></p>
         </div>
         <div class="lang-panel" id="intro-es" lang="es">
@@ -94,6 +112,7 @@
             <li>Familiares adultos que cuidan de niños y niñas con TDAH</li>
           </ul>
           <p class="intro-time"><svg class="time-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Completar la encuesta toma aproximadamente de 20 a 30 minutos.</span></p>
+          <p class="intro-action"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v13m0 0 5.5-5.5M12 18l-5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Elija su país en la lista de abajo para participar.</span></p>
           <p class="contact"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>¿Tiene preguntas? Escríbanos a <a href="mailto:adhdseries.lancetpsy@hku.hk" dir="ltr">adhdseries.lancetpsy@hku.hk</a></span></p>
         </div>
       </div>
@@ -102,23 +121,18 @@
           try {
             var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
             for (var i = 0; i < prefs.length; i++) {
-              var radio = document.getElementById("lang-" + String(prefs[i]).toLowerCase().split("-")[0]);
+              var tag = String(prefs[i]).toLowerCase();
+              var code = tag.split("-")[0];
+              if (code === "zh") {
+                code = /hant|tw|hk|mo/.test(tag) ? "zh-hant" : "zh-hans";
+              }
+              var radio = document.getElementById("lang-" + code);
               if (radio) { radio.checked = true; break; }
             }
           } catch (e) {}
         })();
       </script>
 
-      <details class="about">
-        <summary>About this study</summary>
-        <div class="about-body">
-          <p class="about-note">This section is currently available in English. When you choose your country, the study details and information sheet will be shown in the language of your country’s survey.</p>
-          <h2 class="about-heading">About the project</h2>
-          <p>ADHD is a common neurodevelopmental condition that can affect health, education, employment, family life, and day-to-day functioning. Although previous studies have estimated some of its economic costs, they often do not capture the wider effects on individuals, families, and society. Evidence is also uneven across countries, with much of the existing research coming from higher-income settings. This international project involves more than 30 countries and jurisdictions, including multiple countries across Asia and low- and lower-middle-income settings, to better understand the real-world societal burden of ADHD and compare experiences across different settings.</p>
-          <h2 class="about-heading">Objective</h2>
-          <p>This study aims to improve our understanding of the societal burden of ADHD from a global perspective.</p>
-        </div>
-      </details>
     </header>
 
     <!--
@@ -133,6 +147,11 @@
         <li><a class="row" href="https://hku.au1.qualtrics.com/jfe/form/SV_2lUkammRQJGlORw" target="_blank" rel="noopener noreferrer">
             <img class="flag" src="flags/au.svg" alt="" width="52" height="39" decoding="async">
             <span class="row-names"><span class="name-en">Australia</span><span class="name-lang" translate="no">(<span lang="en">English</span>)</span></span>
+            <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span>
+        </a></li>
+        <li><a class="row" href="https://hku.au1.qualtrics.com/jfe/form/SV_8hSit3gMhziZ8Lc?Q_Language=ES-ES&amp;src=fb" target="_blank" rel="noopener noreferrer">
+            <img class="flag" src="flags/bo.svg" alt="" width="52" height="39" decoding="async">
+            <span class="row-names"><span class="name-en">Bolivia</span><span class="name-lang" translate="no">(<span lang="es">Español</span> / <span lang="en">English</span>)</span></span>
             <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span>
         </a></li>
         <li><a class="row" href="https://hku.au1.qualtrics.com/jfe/form/SV_0UNJbcF4LHOlW3s?Q_Language=PT-BR&amp;src=fb" target="_blank" rel="noopener noreferrer">
@@ -235,6 +254,11 @@
             <span class="row-names"><span class="name-en">Thailand</span><span class="name-local native" lang="th" translate="no">ประเทศไทย</span><span class="name-lang" translate="no">(<span lang="th">ภาษาไทย</span> / <span lang="en">English</span>)</span></span>
             <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span>
         </a></li>
+        <li><a class="row" href="https://hku.au1.qualtrics.com/jfe/form/SV_e8pZrlBgbbIkwYu?src=fb" target="_blank" rel="noopener noreferrer">
+            <img class="flag" src="flags/gb.svg" alt="" width="52" height="39" decoding="async">
+            <span class="row-names"><span class="name-en">United Kingdom</span><span class="name-lang" translate="no">(<span lang="en">English</span>)</span></span>
+            <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span>
+        </a></li>
         <li><a class="row" href="https://hku.au1.qualtrics.com/jfe/form/SV_80uhatY9ARgsO3A?Q_Language=ES-ES&amp;src=fb" target="_blank" rel="noopener noreferrer">
             <img class="flag" src="flags/uy.svg" alt="" width="52" height="39" decoding="async">
             <span class="row-names"><span class="name-en">Uruguay</span><span class="name-lang" translate="no">(<span lang="es">Español</span>)</span></span>
@@ -243,6 +267,11 @@
         <li><a class="row" href="https://hku.au1.qualtrics.com/jfe/form/SV_bqR00J58bCR9idM?Q_Language=VI&amp;src=fb" target="_blank" rel="noopener noreferrer">
             <img class="flag" src="flags/vn.svg" alt="" width="52" height="39" decoding="async">
             <span class="row-names"><span class="name-en">Vietnam</span><span class="name-local native" lang="vi" translate="no">Việt Nam</span><span class="name-lang" translate="no">(<span lang="vi">Tiếng Việt</span> / <span lang="en">English</span>)</span></span>
+            <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span>
+        </a></li>
+        <li><a class="row" href="https://hku.au1.qualtrics.com/jfe/form/SV_3xvU2SqpHc5CRNk?Q_Language=BEM&amp;src=fb" target="_blank" rel="noopener noreferrer">
+            <img class="flag" src="flags/zm.svg" alt="" width="52" height="39" decoding="async">
+            <span class="row-names"><span class="name-en">Zambia</span><span class="name-lang" translate="no">(<span lang="bem">Bemba</span> / <span lang="ny">Nyanja</span> / <span lang="ny">Chewa</span> / <span lang="en">English</span>)</span></span>
             <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span>
         </a></li>
       </ul>
@@ -256,12 +285,6 @@
         <li><a class="row row-soon" href="https://hku.au1.qualtrics.com/jfe/form/SV_6sYERRcM7P4H0qi?Country=Argentina" target="_blank" rel="noopener noreferrer">
             <img class="flag" src="flags/ar.svg" alt="" width="40" height="30" loading="lazy" decoding="async">
             <span class="row-names"><span class="name-en">Argentina</span></span>
-            <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span class="sr-only">Leave your email (opens in a new tab)</span>
-        </a></li>
-        <li><a class="row row-soon" href="https://hku.au1.qualtrics.com/jfe/form/SV_6sYERRcM7P4H0qi?Country=Bolivia" target="_blank" rel="noopener noreferrer">
-            <img class="flag" src="flags/bo.svg" alt="" width="40" height="30" loading="lazy" decoding="async">
-            <span class="row-names"><span class="name-en">Bolivia</span></span>
             <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="sr-only">Leave your email (opens in a new tab)</span>
         </a></li>
@@ -361,21 +384,9 @@
             <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="sr-only">Leave your email (opens in a new tab)</span>
         </a></li>
-        <li><a class="row row-soon" href="https://hku.au1.qualtrics.com/jfe/form/SV_6sYERRcM7P4H0qi?Country=UK" target="_blank" rel="noopener noreferrer">
-            <img class="flag" src="flags/gb.svg" alt="" width="40" height="30" loading="lazy" decoding="async">
-            <span class="row-names"><span class="name-en">United Kingdom</span></span>
-            <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span class="sr-only">Leave your email (opens in a new tab)</span>
-        </a></li>
         <li><a class="row row-soon" href="https://hku.au1.qualtrics.com/jfe/form/SV_6sYERRcM7P4H0qi?Country=USA" target="_blank" rel="noopener noreferrer">
             <img class="flag" src="flags/us.svg" alt="" width="40" height="30" loading="lazy" decoding="async">
             <span class="row-names"><span class="name-en">United States</span></span>
-            <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span class="sr-only">Leave your email (opens in a new tab)</span>
-        </a></li>
-        <li><a class="row row-soon" href="https://hku.au1.qualtrics.com/jfe/form/SV_6sYERRcM7P4H0qi?Country=Zambia" target="_blank" rel="noopener noreferrer">
-            <img class="flag" src="flags/zm.svg" alt="" width="40" height="30" loading="lazy" decoding="async">
-            <span class="row-names"><span class="name-en">Zambia</span></span>
             <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7.5 7.5 5.75 7.5-5.75" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="sr-only">Leave your email (opens in a new tab)</span>
         </a></li>
